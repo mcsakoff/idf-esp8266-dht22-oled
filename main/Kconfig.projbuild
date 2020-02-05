@@ -1,0 +1,23 @@
+menu "Application Configuration"
+
+    menu "DHT22 Module"
+
+        config DHT22_SENSOR_GPIO
+            int "DHT22 GPIO number"
+            range 0 34
+            default 2
+            help
+                GPIO number (IOxx) connected to DHT22 sensor.
+
+        config DHT22_TELEMETRY
+            bool "Collect DHT22 telemetry"
+            default n
+            help
+                Collect timings from DHT22 sensor.
+
+                The timings will be printed out in case of DHT22 sensor communication error.
+                Use for debugging only.
+
+    endmenu
+
+endmenu

@@ -1,0 +1,37 @@
+= IDF (FreeRTOS) ESP8266 DHT22 and OLED Example
+ifdef::env-github[:outfilesuffix: .adoc]
+
+image:https://img.shields.io/badge/idf-esp8266-green[ESP8266,link=https://github.com/espressif/ESP8266_RTOS_SDK]
+image:https://img.shields.io/badge/License-MIT-green.svg[License: MIT,link=https://opensource.org/licenses/MIT]
+
+Built and tested on *ESP-IDF v3.3 (ecdc4cd9)*.
+
+== Prerequisites
+
+- ESP8266 family of chips based device.
+- DHT22 temperature/humidity sensor.
+- SDD1306 OLED 0.66" 64x48 display (Wemos OLED shield).
+- link:https://github.com/espressif/ESP8266_RTOS_SDK[ESP8266 RTOS SDK] and corresponding toolchain installed.
+
+== Build and run
+
+.Configure the project
+    $ make menuconfig
+
+.Build a firmware
+    $ make build
+
+.Flash to the device and run monitor
+    $ make flash monitor
+
+== Development
+
+.Open the project in CLion
+    $ make open
+
+== Copyright and Licensing
+
+Copyright (C) 2019-2020 Alexey McSakoff +
+Free use of this software is granted under the terms of the MIT License.
+
+See the <<LICENSE#,LICENSE>> file for details.
